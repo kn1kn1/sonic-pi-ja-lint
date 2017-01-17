@@ -1,0 +1,23 @@
+{
+  "name": "sonic-pi-ja-lint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kn1kn1/sonic-pi-ja-lint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kn1kn1/sonic-pi-ja-lint/issues"
+  },
+  "homepage": "https://github.com/kn1kn1/sonic-pi-ja-lint#readme",
+  "devDependencies": {
+    "textlint": "^7.2.1",
+    "textlint-rule-preset-jtf-style": "^2.2.3"
+  }
+}
