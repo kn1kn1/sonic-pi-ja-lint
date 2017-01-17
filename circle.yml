@@ -1,0 +1,10 @@
+dependencies:
+  override:
+    - git submodule foreach 'git checkout master; git pull'
+
+test:
+  override:
+    - ./exec-lint.sh
+
+# machine:
+#   environment:
