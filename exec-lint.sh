@@ -1,5 +1,7 @@
 #!/bin/sh
-#git submodule foreach 'git checkout master; git pull'
+git submodule init
+git submodule update
+git submodule foreach 'git checkout master; git pull'
 
 ls -al
 

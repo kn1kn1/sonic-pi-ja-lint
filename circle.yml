@@ -1,9 +1,9 @@
 # dependencies:
 #   override:
 #     - git submodule foreach 'git checkout master; git pull'
-checkout:
-  post:
-    - git submodule foreach 'git checkout master; git pull'
+# checkout:
+#   post:
+#     - git submodule foreach 'git checkout master; git pull'
 
 test:
   override:
