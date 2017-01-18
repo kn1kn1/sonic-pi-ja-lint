@@ -6,11 +6,10 @@
             "3.1.1.全角文字と半角文字の間": false,
             "4.2.1.感嘆符(！)": false,
             "4.2.2.疑問符(？)": false,
-            "4.2.6.ハイフン(-)": false
+            "4.2.6.ハイフン(-)": false,
+            "4.2.7.コロン(：)": false
         },
-        "max-ten": {
-            "max": 4
-        },
+        "max-ten": false,
         "spellcheck-tech-word": true,
         "no-mix-dearu-desumasu": true
     }
