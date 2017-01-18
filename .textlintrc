@@ -1,5 +1,17 @@
 {
     "rules": {
-        "preset-jtf-style": true
+        "preset-jtf-style": {
+            "1.2.2.ピリオド(.)とカンマ(,)": false,
+            "2.1.6.カタカナの長音": false,
+            "3.1.1.全角文字と半角文字の間": false,
+            "4.2.1.感嘆符(！)": false,
+            "4.2.2.疑問符(？)": false,
+            "4.2.6.ハイフン(-)": false
+        },
+        "max-ten": {
+            "max": 4
+        },
+        "spellcheck-tech-word": true,
+        "no-mix-dearu-desumasu": true
     }
 }
