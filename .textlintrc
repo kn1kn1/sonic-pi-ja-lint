@@ -1,5 +1,10 @@
 {
     "rules": {
+        "prh": {
+            "rulePaths": [
+                "./prh.yml"
+            ]
+        },
         "preset-jtf-style": {
             "1.2.2.ピリオド(.)とカンマ(,)": false,
             "2.1.6.カタカナの長音": false,

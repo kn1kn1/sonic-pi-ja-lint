@@ -1,0 +1,10 @@
+version: 1
+rules:
+  - expected: エフェクト
+    pattern:  効果
+  - expected: 音作り
+    pattern:  音造り
+  - expected: Buffer
+    pattern:  buffer
+  - expected: Buffer
+    pattern:  バッファ
