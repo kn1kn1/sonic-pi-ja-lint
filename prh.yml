@@ -1,7 +1,11 @@
 version: 1
 rules:
-  - expected: エフェクト
-    pattern:  効果
+  - expected: エフェクト$1
+    pattern:
+      - /効果([^(的)])/
+    specs:
+      - from: これは効果的なのでセーフ
+        to  : これは効果的なのでセーフ
   - expected: 音作り
     pattern:  音造り
   - expected: Buffer
