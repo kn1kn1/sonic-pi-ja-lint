@@ -1,3 +1,4 @@
+# taken from https://github.com/azu/prh.yml/blob/master/ja/web+db.yml
 # WEB+DB PRESS用語統一ファイルをよりゆるやかにした辞書
 # 削除: 他のルールと衝突しやすいもの、組版向け記号、全角記号に関するもの
 # WEB+DB PRESS用語統一ルール( https://gist.github.com/inao/f55e8232e150aee918b9 )に沿ったものを使いたい場合は以下のルールを使用してください
@@ -220,8 +221,8 @@ rules:
   - expected: セッタ
     pattern: セッター
 
-  - expected: セレクタ
-    pattern: セレクター
+  # - expected: セレクタ
+  #   pattern: セレクター
 
   - expected: $1ソフトウェア
     pattern: /([^経])ソフトウエア/
@@ -314,8 +315,8 @@ rules:
   - expected: バッファ
     pattern: バッファー
 
-  - expected: $1パス
-    pattern: /([^\w\s])\bpath\b|([^\w\s])\bPath\b/
+  # - expected: $1パス
+  #   pattern: /([^\w\s])\bpath\b|([^\w\s])\bPath\b/
 
   - expected: パターン
     pattern: パタン
@@ -371,8 +372,8 @@ rules:
   - expected: プレーヤ
     pattern: プレーヤー
 
-  - expected: ブレーク
-    pattern: ブレイク
+  # - expected: ブレーク
+  #   pattern: ブレイク
 
   # ☆ロールプレイング☆
   - expected: プレーン$1
@@ -561,8 +562,8 @@ rules:
     pattern: /\bDual Core\b|デュアルCore|Dualコア/
 
   # 人間の意味では「マスター」
-  - expected: マスタ$1
-    pattern: /マスター([^.])/
+  # - expected: マスタ$1
+  #   pattern: /マスター([^.])/
 
   - expected: マスタ／スレーブ
     pattern: マスタ・スレーブ
@@ -1413,9 +1414,9 @@ rules:
   - expected: ％$1
     pattern: /%([^0123456789])/
 
-  # カタカナの後ろの中黒「・」をトルツメ。★ア・★
-  - expected: $1
-    pattern: /([ァ-ヶ])・/
+  # # カタカナの後ろの中黒「・」をトルツメ。★ア・★
+  # - expected: $1
+  #   pattern: /([ァ-ヶ])・/
 
   - expected: …
     pattern: /・・・|･･･/
