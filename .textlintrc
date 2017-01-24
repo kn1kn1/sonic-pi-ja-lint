@@ -2,7 +2,8 @@
     "rules": {
         "prh": {
             "rulePaths": [
-                "./prh.yml"
+                "./prh.yml",
+                "./web+db.yml"
             ]
         },
         "preset-jtf-style": {
@@ -15,7 +16,7 @@
             "4.2.7.コロン(：)": false
         },
         "max-ten": false,
-        "spellcheck-tech-word": true,
+        "spellcheck-tech-word": false,
         "no-mix-dearu-desumasu": true
     }
 }
