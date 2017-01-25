@@ -1552,8 +1552,8 @@ rules:
     pattern: 、）
 
   # ★文末なのでここでは検証できない★
-  - expected: ）。$1
-    pattern: /）(\n)/
+  # - expected: ）。$1
+  #   pattern: /）(\n)/
 
   - expected: 「
     pattern: ｢
