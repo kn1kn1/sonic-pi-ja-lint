@@ -945,8 +945,8 @@ rules:
   - expected: OpenGL
     pattern: /\bOpen GL\b/
 
-  - expected: OS
-    pattern: オペレーティングシステム
+  # - expected: OS
+  #   pattern: オペレーティングシステム
 
   - expected: PC
     pattern: パソコン
@@ -1541,8 +1541,8 @@ rules:
   - expected: ）
     pattern: /） | ）/
 
-  - expected: （
-    pattern: /．（|。（/
+  # - expected: （
+  #   pattern: /．（|。（/
 
   # 。は括弧の内側に
   - expected: ）。
