@@ -9,4 +9,4 @@ ls -al
 sonic-pi/app/server/bin/i18n-tool.rb -t
 
 # text-lint
-node_modules/.bin/textlint sonic-pi/etc/doc/generated/ja/tutorial
+node_modules/.bin/textlint -f junit -o report.xml sonic-pi/etc/doc/generated/ja/tutorial
