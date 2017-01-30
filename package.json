@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kn1kn1/sonic-pi-ja-lint#readme",
   "devDependencies": {
+    "lodash": "^3.10.0",
     "textlint": "^7.2.1",
     "textlint-rule-max-ten": "^2.0.3",
     "textlint-rule-no-mix-dearu-desumasu": "^3.0.3",
