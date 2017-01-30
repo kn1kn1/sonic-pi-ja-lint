@@ -13,6 +13,5 @@ test:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - cp -p report.xml $CIRCLE_TEST_REPORTS/junit/;
 
-Mocha for Node.js
 # machine:
 #   environment:
