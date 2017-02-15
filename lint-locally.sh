@@ -1,0 +1,15 @@
+#!/bin/sh
+# git submodule init
+# git submodule update
+# git submodule foreach 'git checkout master; git pull'
+
+curl https://hosted.weblate.org/download/sonic-pi/tutorial/ja/ -o sonic-pi/etc/doc/lang/sonic-pi-tutorial-ja.po
+
+ls -al
+
+# generate transrated md files
+sonic-pi/app/server/bin/i18n-tool.rb -t
+
+# text-lint
+#node_modules/.bin/textlint -f junit -o report.xml sonic-pi/etc/doc/generated/ja/tutorial
+node_modules/.bin/textlint sonic-pi/etc/doc/generated/ja/tutorial
