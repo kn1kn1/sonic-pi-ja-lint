@@ -1,11 +1,11 @@
 #!/bin/sh
-# git submodule init
-# git submodule update
-# git submodule foreach 'git checkout master; git pull'
-
-curl https://hosted.weblate.org/download/sonic-pi/tutorial/ja/ -o sonic-pi/etc/doc/lang/sonic-pi-tutorial-ja.po
+git submodule init
+git submodule update
+git submodule foreach 'git checkout master -- .; git pull origin master'
 
 ls -al
+
+curl https://hosted.weblate.org/download/sonic-pi/tutorial/ja/ -o sonic-pi/etc/doc/lang/sonic-pi-tutorial-ja.po
 
 # generate transrated md files
 sonic-pi/app/server/bin/i18n-tool.rb -t
