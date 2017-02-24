@@ -10,5 +10,14 @@ rules:
     pattern:  音造り
   - expected: Buffer
     pattern:  buffer
-  - expected: Buffer
-    pattern:  バッファ
+  - expected: $1Buffer$2
+    pattern:
+      - /([^（|リング])バッファ([^）])/
+  - expected: サステイン
+    pattern:  サスティン
+  - expected: を
+    pattern:  をを
+  - expected: が
+    pattern:  がが
+  - expected: は
+    pattern:  はは
