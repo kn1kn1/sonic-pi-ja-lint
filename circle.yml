@@ -4,7 +4,7 @@ checkout:
     - git clone https://github.com/samaaron/sonic-pi.git
     - ls -al
     - curl https://hosted.weblate.org/download/sonic-pi/tutorial/ja/ -o sonic-pi/etc/doc/lang/sonic-pi-tutorial-ja.po
-    - sonic-pi/app/server/bin/i18n-tool.rb -t
+    - sonic-pi/app/server/ruby/bin/i18n-tool.rb -t
 
 test:
   override:
