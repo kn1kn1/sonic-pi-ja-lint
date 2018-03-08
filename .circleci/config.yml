@@ -17,10 +17,10 @@ jobs:
       - run: curl https://hosted.weblate.org/download/sonic-pi/tutorial/ja/ -o sonic-pi/etc/doc/lang/sonic-pi-tutorial-ja.po
       - run: sonic-pi/app/server/ruby/bin/i18n-tool.rb -t
       - run:
-        name: textlint
-        command: |
-          mkdir -p ~/junit/
-          node_modules/.bin/textlint -f junit -o ~/junit/report.xml sonic-pi/etc/doc/generated/ja/tutorial
+          name: textlint
+          command: |
+            mkdir -p ~/junit/
+            node_modules/.bin/textlint -f junit -o ~/junit/report.xml sonic-pi/etc/doc/generated/ja/tutorial
       - store_test_results:
           path: ~/junit
       - store_artifacts:
