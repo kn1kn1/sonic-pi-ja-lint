@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  lint:
+  build:
     branches:
       only:
         - feature/circleci-v2
