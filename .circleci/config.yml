@@ -5,10 +5,7 @@ jobs:
       - image: circleci/ruby:2.3-stretch-node
     steps:
       - checkout
-      - run: pwd
-      - run: ls -al
       - run: npm install
-      - run: ls -al
       - run: rm -rf sonic-pi
       - run: git clone https://github.com/samaaron/sonic-pi.git
       - run: curl https://hosted.weblate.org/download/sonic-pi/tutorial/ja/ -o sonic-pi/etc/doc/lang/sonic-pi-tutorial-ja.po
@@ -31,7 +28,7 @@ workflows:
   nightly:
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: "0 13 * * *"
           filters:
             branches:
               only:
