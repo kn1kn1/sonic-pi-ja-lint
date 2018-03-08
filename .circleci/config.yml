@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  lint:
     branches:
       only:
         - feature/circleci-v2
@@ -25,3 +25,19 @@ jobs:
           path: ~/junit
       - store_artifacts:
           path: ~/junit
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - lint
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - feature/circleci-v2
+    jobs:
+      - lint
