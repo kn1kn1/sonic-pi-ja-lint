@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  lint:
+    branches:
+      only:
+        - feature/circleci-v2
+    docker:
+      - image: circleci/ruby:2.3-stretch-node
+    steps:
+      - checkout
+      - run: pwd
+      - run: ls -al
+      - run: npm install
+      - run: ls -al
+      - run: rm -rf sonic-pi
