@@ -28,10 +28,10 @@ workflows:
   nightly:
     triggers:
       - schedule:
-          cron: "0 13 * * *"
+          cron: "0 18 * * *"
           filters:
             branches:
               only:
-                - feature/circleci-v2
+                - master
     jobs:
       - build
